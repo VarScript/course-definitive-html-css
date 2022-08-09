@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="descripcion" content="Pueba de pagina con gatitos"> <!--descripcion de la pagina cuando la buscamos en google-->
+        <meta name="robots" content="index,follow"> <!--Para que los robots busquen mi pagina y sea visible si quiero que mi pagina no se vea pongo unfollow-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--este meta sirve para que en los dispositivos moviles la letra y demas objetos de agranden para no tener que darle zoom -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Course Html and Css</title>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav__item"><a href="">Home</a></li>
+                    <li class="main-nav__item"><a href="">Courses</a></li>
+                    <li class="main-nav__item"><a href="">Instructors</a></li>
+                    <li class="main-nav__item"><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="super-list">
+               <h1>I'm incredible market list</h1>
+               <ul>
+                <li>Fruit</li>
+                    <ol>
+                        <li>Apple</li>
+                        <li>banana</li>
+                    </ol>
+                <li>Meats</li>
+                    <ol>
+                        <li>Chicken</li>
+                        <li>Molid meat</li>
+                    </ol>
+                    <li>Vegetables</li>
+                        <ol>
+                            <li>Lemon</li>
+                            <a href="https://www.google.com/search?client=opera&q=carrot+recipe&sourceid=opera&ie=UTF-8&oe=UTF-8"><li>Carrot</li></a>
+                        </ol>
+               </ul>
+               <p>Built with love</p>
+            </section>
+            <div class="line"></div>
+            <section class="img-var-script">
+                <figure>
+                    <img src="./image/horizontalVersions.png" alt="Mi loguito">
+                    <figcaption>It's a image of my logo</figcaption><!--Descripcion de la imagen-->
+                </figure><!--Es lo correcto usar para encerrar ina img. Etiqueta contenedora-->
+            </section>
+            <div class="line"></div>
+            <section class="video">
+                <video controls preload="auto"><source src="./video/jamming.mp4#t=0,155"></video> <!--source para poner videos con diferentes formatos. #t=0,155 para que comience el el segundo dado y que se termine en el 155. Controls es para que aparezcan los botyones cdel video. Preload es para para que se descargue desde antes y no desde que uno pincha el boton-->
+            </section>
+            <div class="line"></div>
+            <section>
+                <form action="">
+                    <label for="name">
+                        <span>What is your name?</span>
+                        <input type="text" id="name" placeholder="Your name">
+                    </label>
+                    <label for="start-platzi">
+                        <span>What day did you satrt in Platzi?</span>
+                        <input type="date" id="start-platzi">
+                    </label>
+                    <label for="schedule">
+                        <span>What time do you study?</span>
+                        <input type="time" id="schedule">
+                    </label>
+                </form><!--lo que viene a qui es un formulario-->
+            </section>
+            <div class="line"></div>
+            <section>
+                <form action="">
+                    <label for="hour">
+                        <span>Hour</span>
+                        <input type="time" id="hour" name="hour">
+                    </label>
+                    <label for="day">
+                        <span>Day</span>
+                        <input type="date" id="day" name="day">
+                    </label>
+                    <label for="week">
+                        <span>Week</span>
+                        <input type="week" id="week" name="week">
+                    </label>
+                    <label for="month">
+                        <span>Month</span>
+                        <input type="month" id="month" name="month">
+                    </label>
+                    <input type="submit">
+                </form>
+            </section>
+            <div class="line"></div>
+            <section>
+                <form action="">
+                    <label for="schedule">
+                        <span>Schedule</span>
+                        <input type="datetime-local" name="schedule" id="schedule">
+                    </label>
+                    <input type="submit" name="" id="">
+                </form>
+            </section>
+            <div class="line"></div>
+            <section>
+                <form action="">
+                    <label for="name">
+                        <span>What is your name?</span>
+                        <input type="text" name="name" id="name" autocomplete="additional-name" placeholder="Name" required>
+                    </label>
+                    <label for="email">
+                        <span>What is your email?</span>
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="E-mail" required>
+                    </label>
+                    <label for="country">
+                        <span>What country do you live?</span>
+                        <input type="text" name="country" id="country" autocomplete="country" placeholder="Country" required>
+                    </label>
+                    <label for="postal-code">
+                        <span>What is your postal-code?</span>
+                        <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" placeholder="Postal code" required>
+                    </label>
+                    <input type="submit">
+                </form>
+            </section>
+            <div class="line"></div>
+            <section>
+                <!-- <select name="cours" id="">
+                    <option value="">javaScript</option>
+                    <option value="">Html5</option>
+                    <option value="">Css3</option>
+                    <option value="">Web Standard</option>
+                </select> MALAS PRACTICAS-->                
+            </section>
+            <div class="line"></div>
+            <section>
+                <form action="">
+                        <input list="cours" required>
+                        <datalist id="cours">
+                            <option value="JavaScript"></option>
+                            <option value="Html5"></option>
+                            <option value="Css3"></option>
+                            <option value="Web Standards"></option>
+                        </datalist>         
+                    <input type="submit">
+                </form>              
+            </section>
+            <div class="line"></div>
+            <section>
+                <input type="submit" value="Name">
+
+                <button type="submit">What color do you like?</button>
+            </section>
+            <div class="line"></div>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
+
+
+  <!--NOTAS
+    
+    <ul>
+                <li>i'm incredible energy</li><!--list item-->
+            <!--</ul> <!--Lista desordenada-->
+            <!--<ol></ol> <!--Lista ordenada-->
